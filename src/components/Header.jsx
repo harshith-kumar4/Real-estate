@@ -7,17 +7,15 @@ export default function Header() {
           <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
             <Link to='/'>
               <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'>
-                <span className='text-slate-500'>Sahand</span>
-                <span className='text-slate-700'>Estate</span>
+                <span className='text-slate-500'>Heaven</span>
+                <span className='text-slate-700'>Seek</span>
               </h1>
             </Link>
             <form>
             <input
             type='text'
-            placeholder='Search...'
+            placeholder='Search'
             className='bg-transparent focus:outline-none w-24 sm:w-64'
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
           />
           <button>
             <FaSearch className='text-slate-600' />
@@ -33,10 +31,12 @@ export default function Header() {
             <li className='hidden sm:inline text-red-600 hover:underline'>
               About
             </li>
-            <li className='sm:inline text-violet-600 hover:underline'>
-              About
-            </li>
-          </Link>
+            </Link>
+            <Link to='/profile'>
+              <li className='sm:inline text-violet-600 hover:underline'>
+                SignIn
+              </li>
+            </Link>
           </ul>
       </div>
     </header>
